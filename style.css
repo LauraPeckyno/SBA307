@@ -91,9 +91,9 @@ h4 {
     align-items: center;
 }
 .columnContainer3 {
-    display:flex;
-    justify-content: space-between;
+    display:block;
     padding:3em;
+    text-align: center;
 }
 .headPic {
     object-fit: cover;
