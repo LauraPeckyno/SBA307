@@ -259,8 +259,16 @@ h4 {
 }
 
 #rocket {
-    font-size: 50px;
-    margin: 5px;
+    font-size: 5em;
+    transition:
+    width 2s,
+    height 2s,
+    background-color 2s,
+    rotate 2s;
+}
+#rocket:hover {
+    rotate: 25deg;
+    color: #57eb49d5;
 }
 
 .styled {
