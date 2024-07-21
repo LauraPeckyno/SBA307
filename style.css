@@ -1,0 +1,346 @@
+.page {
+    margin: 0px;
+    background-color: rgb(255, 109, 109)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+p,
+a {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    border: dashed rgba(56, 56, 56, 0.171);
+    background-color: white;
+}
+
+.butNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: auto;
+    /* border: dashed rgba(56, 56, 56, 0.171); */
+    background-color: white;
+}
+
+/* remove underlining from links */
+.navigation a {
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+/* hover mouseover effect */
+.navigation a:hover {
+    background-color: #a2c4d4d5;
+    color: rgb(32, 32, 32);
+}
+
+.navigation #current {
+    background-color: #57eb49d5;
+    color: rgb(32, 32, 32);
+}
+
+.rightAnnouncement {
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.headIntroContainer {
+    display: flex;
+    flex-direction: column;
+}
+.titleBox {
+    margin: 20px;
+}
+
+.subtitleBox {
+    background-color: white;
+    padding: 20px;
+}
+.titleBox h1 {
+    font-size: 50px;
+}
+
+.columnContainer {
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+.columnContainer2 {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.columnContainer3 {
+    display:flex;
+    justify-content: space-between;
+    padding:3em;
+}
+.headPic {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.intro {
+    margin: 15px;
+
+}
+
+.leftHead {
+    flex: 60%;
+    padding-right: 25px;
+}
+
+.leftHead2 {
+    flex: 40%;
+    padding: 25px;
+}
+
+.look {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    height: auto;
+}
+
+.lookBlocks {
+    /* border:solid black; */
+    padding: 15px;
+
+
+}
+
+.educators {
+    border: dashed black;
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    margin: 25px;
+}
+
+.rightHead {
+    flex: 40%;
+    align-items: flex-end;
+
+}
+
+.rightHead2 {
+    flex: 60%;
+    margin-top: 15px;
+}
+.rightHead3 {
+    flex: 60%;
+}
+
+#astroPic {
+    border:solid rgba(53, 50, 50, 0.205);
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.centerImage {
+    display:flex;
+    align-items: flex-end;
+}
+
+#astroPic2 {
+    border-radius: 85px;
+    border: solid rgba(87, 71, 71, 0.788);
+    border-width: 10px;
+    border-style: inset;
+    object-fit: cover;
+    margin: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.lookButton {
+    border: dashed rgba(94, 94, 94, 0.37);
+    background-color: rgb(255, 255, 0);
+    color: rgb(32, 32, 32);
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.lookButton:hover {
+    background-color: #a2c4d4d5;
+    color: rgb(32, 32, 32);
+}
+
+.lookButton a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+.preLaunchInvite {
+    /* border: solid red; */
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    height: auto;
+}
+
+.launchLeft {
+    border: dashed rgb(146, 145, 146);
+    background-color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 25px;
+    flex: 50%;
+}
+
+.launchRight {
+    /* border: solid green; */
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 15px;
+    flex: 50%;
+}
+
+#jump {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+#jump:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(241, 33, 60, 0.74);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the columns stack */
+@media screen and (max-width: 700px) {
+
+    .preLaunchInvite,
+    .headIntro, 
+    .columnContainer,
+    .columnContainer2 {
+        flex-direction: column;
+    }
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+#rocket {
+    font-size: 50px;
+    margin: 5px;
+}
+
+.styled {
+    border: dashed rgba(94, 94, 94, 0.37);
+    background-color: rgb(255, 255, 0);
+    color: rgb(32, 32, 32);
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.styled:hover {
+    background-color: #a2c4d4d5;
+    color: rgb(32, 32, 32);
+}
+
+.odibee-sans-regular {
+    font-family: "Odibee Sans", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#pages {
+    /* border:solid rgb(180, 17, 172); */
+    border: dashed rgba(56, 56, 56, 0.171);
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.categoryTable {
+    /* border: solid purple; */
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25px;
+    width: 80%;
+    border: dashed rgba(94, 94, 94, 0.37);
+}
+
+
+table {
+    border: 2px solid #000000;
+    width: 100%;
+    text-align: left;
+}
+
+table td,
+table th {
+    border: 3px solid #AAAAAA;
+    padding: 6px 6px;
+}
+
+table tbody td {
+    font-size: 16px;
+    color: #333333;
+}
+
+table tr:nth-child(even) {
+    background: #f5dfe3fd;
+}
+
+table thead th {
+    font-size: 15px;
+    font-weight: bold;
+}
+.lower {
+    display:flex;
+    justify-content: center;
+    padding:2em;
+    text-align: center;
+}
